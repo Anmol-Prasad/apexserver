@@ -4,7 +4,7 @@ const app = express();
 
 const clientId = '3MVG9GCMQoQ6rpzTU4xobK1vILbUOSgBk4Oi7k7YzYW3AnASXqH0nSe0CDcIT7xNSIy7XvHhCUXl7MfgC8oJW';
 const clientSecret = '6CAB4D5ED7CC9927AE39FD5F51A8CDBCCFF87F28C94EBCDC9A169DBFF4410EEB';
-const redirectUri = 'https://apexserver-gu2i.onrender.com';
+const redirectUri = 'https://apexserver-gu2i.onrender.com/callback';
 
 app.get('/callback', async (req, res) => {
   const code = req.query.code;
